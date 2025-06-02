@@ -1,3 +1,6 @@
+import pandas as pd
+import matplotlib as plt
+
 def plot_brainwave_data_2D(file_path="data/eeg_audio_log.csv", start_time="13:24:24", end_time="13:45:08"):
     """Reads EEG data and visualizes all 20 channels in a clean grid layout."""
     try:
@@ -7,7 +10,7 @@ def plot_brainwave_data_2D(file_path="data/eeg_audio_log.csv", start_time="13:24
             print(" No data found in the file. Ensure logging is running.")
             return
 
-        df["Delta_Power"] = df["Delta_Power"].apply(ast.literal_eval)
+        #df["Delta_Power"] = df["Delta_Power"].apply(ast.literal_eval)
 
         df["Timestamp"] = pd.to_datetime(df["Timestamp"].str.strip(), format="%H:%M:%S", errors='coerce')
         df.dropna(subset=["Timestamp"], inplace=True)  # Remove any rows where timestamp couldn't be parsed

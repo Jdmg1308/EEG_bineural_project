@@ -1,6 +1,6 @@
 import asyncio
 import threading
-from eeg_collector import EEGCollector
+from eeg_collector_old import EEGCollector
 from audio_processor import AudioProcessor
 from data_logger import DataLogger
 from rl_agent import BrainwaveRLAgent
