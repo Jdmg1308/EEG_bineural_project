@@ -1,0 +1,1 @@
+C:\Users\juand\OneDrive\Documentos\BCI_projects\EEG_bineural_project\c++\libmuse_windows_8.0.0\libmuse_windows_8.0.0\examples\ReaderWriter\ReaderWriter.vcxproj;x64

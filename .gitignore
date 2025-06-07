@@ -1,0 +1,45 @@
+# Build results
+[Bb]in/
+[Oo]bj/
+*.obj
+*.exe
+*.ilk
+*.ipdb
+*.pdb
+*.idb
+*.cache
+*.tlog
+*.log
+*.vspscc
+*.vssscc
+*.suo
+*.user
+*.userossc
+*.sln.docstates
+*.VC.db
+*.VC.VC.opendb
+*.Browse.VC.db
+
+# Precompiled headers
+*.pch
+*.gch
+
+# Visual Studio cache
+.vs/
+
+# CMake build folders (if used)
+build/
+out/
+
+# Other
+*.lib
+*.dll
+*.exp
+*.ncb
+*.sdf
+*.opensdf
+*.aps
+*.db
+*.ipch
+*.iobj
+*.ipdb

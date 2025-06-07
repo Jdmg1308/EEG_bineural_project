@@ -1,0 +1,50 @@
+C:\Users\juand\OneDrive\Documentos\BCI_projects\SDK - RDK\Muse SDK _ RDK\Muse SDK\Muse SDK 8.0.0\libmuse_windows_8.0.0\libmuse_windows_8.0.0\examples\x64\Debug\ReaderWriter\App.xbf
+C:\Users\juand\OneDrive\Documentos\BCI_projects\SDK - RDK\Muse SDK _ RDK\Muse SDK\Muse SDK 8.0.0\libmuse_windows_8.0.0\libmuse_windows_8.0.0\examples\x64\Debug\ReaderWriter\MainPage.xbf
+C:\Users\juand\OneDrive\Documentos\BCI_projects\SDK - RDK\Muse SDK _ RDK\Muse SDK\Muse SDK 8.0.0\libmuse_windows_8.0.0\libmuse_windows_8.0.0\examples\x64\Debug\ReaderWriter\resources.pri
+C:\Users\juand\OneDrive\Documentos\BCI_projects\SDK - RDK\Muse SDK _ RDK\Muse SDK\Muse SDK 8.0.0\libmuse_windows_8.0.0\libmuse_windows_8.0.0\examples\x64\Debug\ReaderWriter\AppxManifest.xml
+C:\Users\juand\OneDrive\Documentos\BCI_projects\SDK - RDK\Muse SDK _ RDK\Muse SDK\Muse SDK 8.0.0\libmuse_windows_8.0.0\libmuse_windows_8.0.0\examples\x64\Debug\ReaderWriter\ReaderWriter.build.appxrecipe
+C:\Users\juand\OneDrive\Documentos\BCI_projects\SDK - RDK\Muse SDK _ RDK\Muse SDK\Muse SDK 8.0.0\libmuse_windows_8.0.0\libmuse_windows_8.0.0\examples\ReaderWriter\x64\Debug\ReaderWriter.vcxproj.AssemblyReference.cache
+C:\Users\juand\OneDrive\Documentos\BCI_projects\SDK - RDK\Muse SDK _ RDK\Muse SDK\Muse SDK 8.0.0\libmuse_windows_8.0.0\libmuse_windows_8.0.0\examples\ReaderWriter\x64\Debug\XamlSaveStateFile.xml
+C:\Users\juand\OneDrive\Documentos\BCI_projects\SDK - RDK\Muse SDK _ RDK\Muse SDK\Muse SDK 8.0.0\libmuse_windows_8.0.0\libmuse_windows_8.0.0\examples\ReaderWriter\x64\Debug\ResourceHandlingTask.state
+C:\Users\juand\OneDrive\Documentos\BCI_projects\SDK - RDK\Muse SDK _ RDK\Muse SDK\Muse SDK 8.0.0\libmuse_windows_8.0.0\libmuse_windows_8.0.0\examples\ReaderWriter\x64\Debug\ReaderWriter.vcxproj.GenerateResource.Cache
+C:\Users\juand\OneDrive\Documentos\BCI_projects\SDK - RDK\Muse SDK _ RDK\Muse SDK\Muse SDK 8.0.0\libmuse_windows_8.0.0\libmuse_windows_8.0.0\examples\ReaderWriter\x64\Debug\priconfig.xml
+C:\Users\juand\OneDrive\Documentos\BCI_projects\SDK - RDK\Muse SDK _ RDK\Muse SDK\Muse SDK 8.0.0\libmuse_windows_8.0.0\libmuse_windows_8.0.0\examples\ReaderWriter\x64\Debug\priconfig.xml.intermediate
+C:\Users\juand\OneDrive\Documentos\BCI_projects\SDK - RDK\Muse SDK _ RDK\Muse SDK\Muse SDK 8.0.0\libmuse_windows_8.0.0\libmuse_windows_8.0.0\examples\ReaderWriter\x64\Debug\unfiltered.layout.resfiles
+C:\Users\juand\OneDrive\Documentos\BCI_projects\SDK - RDK\Muse SDK _ RDK\Muse SDK\Muse SDK 8.0.0\libmuse_windows_8.0.0\libmuse_windows_8.0.0\examples\ReaderWriter\x64\Debug\unfiltered.layout.resfiles.intermediate
+C:\Users\juand\OneDrive\Documentos\BCI_projects\SDK - RDK\Muse SDK _ RDK\Muse SDK\Muse SDK 8.0.0\libmuse_windows_8.0.0\libmuse_windows_8.0.0\examples\ReaderWriter\x64\Debug\filtered.layout.resfiles
+C:\Users\juand\OneDrive\Documentos\BCI_projects\SDK - RDK\Muse SDK _ RDK\Muse SDK\Muse SDK 8.0.0\libmuse_windows_8.0.0\libmuse_windows_8.0.0\examples\ReaderWriter\x64\Debug\filtered.layout.resfiles.intermediate
+C:\Users\juand\OneDrive\Documentos\BCI_projects\SDK - RDK\Muse SDK _ RDK\Muse SDK\Muse SDK 8.0.0\libmuse_windows_8.0.0\libmuse_windows_8.0.0\examples\ReaderWriter\x64\Debug\excluded.layout.resfiles
+C:\Users\juand\OneDrive\Documentos\BCI_projects\SDK - RDK\Muse SDK _ RDK\Muse SDK\Muse SDK 8.0.0\libmuse_windows_8.0.0\libmuse_windows_8.0.0\examples\ReaderWriter\x64\Debug\excluded.layout.resfiles.intermediate
+C:\Users\juand\OneDrive\Documentos\BCI_projects\SDK - RDK\Muse SDK _ RDK\Muse SDK\Muse SDK 8.0.0\libmuse_windows_8.0.0\libmuse_windows_8.0.0\examples\ReaderWriter\x64\Debug\resources.resfiles
+C:\Users\juand\OneDrive\Documentos\BCI_projects\SDK - RDK\Muse SDK _ RDK\Muse SDK\Muse SDK 8.0.0\libmuse_windows_8.0.0\libmuse_windows_8.0.0\examples\ReaderWriter\x64\Debug\resources.resfiles.intermediate
+C:\Users\juand\OneDrive\Documentos\BCI_projects\SDK - RDK\Muse SDK _ RDK\Muse SDK\Muse SDK 8.0.0\libmuse_windows_8.0.0\libmuse_windows_8.0.0\examples\ReaderWriter\x64\Debug\pri.resfiles
+C:\Users\juand\OneDrive\Documentos\BCI_projects\SDK - RDK\Muse SDK _ RDK\Muse SDK\Muse SDK 8.0.0\libmuse_windows_8.0.0\libmuse_windows_8.0.0\examples\ReaderWriter\x64\Debug\pri.resfiles.intermediate
+C:\Users\juand\OneDrive\Documentos\BCI_projects\SDK - RDK\Muse SDK _ RDK\Muse SDK\Muse SDK 8.0.0\libmuse_windows_8.0.0\libmuse_windows_8.0.0\examples\ReaderWriter\x64\Debug\qualifiers.txt
+C:\Users\juand\OneDrive\Documentos\BCI_projects\SDK - RDK\Muse SDK _ RDK\Muse SDK\Muse SDK 8.0.0\libmuse_windows_8.0.0\libmuse_windows_8.0.0\examples\ReaderWriter\x64\Debug\qualifiers.txt.intermediate
+C:\Users\juand\OneDrive\Documentos\BCI_projects\SDK - RDK\Muse SDK _ RDK\Muse SDK\Muse SDK 8.0.0\libmuse_windows_8.0.0\libmuse_windows_8.0.0\examples\ReaderWriter\x64\Debug\MultipleQualifiersPerDimensionFound.txt
+C:\Users\juand\OneDrive\Documentos\BCI_projects\SDK - RDK\Muse SDK _ RDK\Muse SDK\Muse SDK 8.0.0\libmuse_windows_8.0.0\libmuse_windows_8.0.0\examples\ReaderWriter\x64\Debug\ProjectArchitectures.txt
+C:\Users\juand\OneDrive\Documentos\BCI_projects\EEG_bineural_project\c++\libmuse_windows_8.0.0\libmuse_windows_8.0.0\examples\x64\Debug\ReaderWriter\App.xbf
+C:\Users\juand\OneDrive\Documentos\BCI_projects\EEG_bineural_project\c++\libmuse_windows_8.0.0\libmuse_windows_8.0.0\examples\x64\Debug\ReaderWriter\MainPage.xbf
+C:\Users\juand\OneDrive\Documentos\BCI_projects\EEG_bineural_project\c++\libmuse_windows_8.0.0\libmuse_windows_8.0.0\examples\x64\Debug\ReaderWriter\resources.pri
+C:\Users\juand\OneDrive\Documentos\BCI_projects\EEG_bineural_project\c++\libmuse_windows_8.0.0\libmuse_windows_8.0.0\examples\x64\Debug\ReaderWriter\AppxManifest.xml
+C:\Users\juand\OneDrive\Documentos\BCI_projects\EEG_bineural_project\c++\libmuse_windows_8.0.0\libmuse_windows_8.0.0\examples\x64\Debug\ReaderWriter\ReaderWriter.build.appxrecipe
+C:\Users\juand\OneDrive\Documentos\BCI_projects\EEG_bineural_project\c++\libmuse_windows_8.0.0\libmuse_windows_8.0.0\examples\ReaderWriter\x64\Debug\ReaderWriter.vcxproj.AssemblyReference.cache
+C:\Users\juand\OneDrive\Documentos\BCI_projects\EEG_bineural_project\c++\libmuse_windows_8.0.0\libmuse_windows_8.0.0\examples\ReaderWriter\x64\Debug\XamlSaveStateFile.xml
+C:\Users\juand\OneDrive\Documentos\BCI_projects\EEG_bineural_project\c++\libmuse_windows_8.0.0\libmuse_windows_8.0.0\examples\ReaderWriter\x64\Debug\ResourceHandlingTask.state
+C:\Users\juand\OneDrive\Documentos\BCI_projects\EEG_bineural_project\c++\libmuse_windows_8.0.0\libmuse_windows_8.0.0\examples\ReaderWriter\x64\Debug\ReaderWriter.vcxproj.GenerateResource.Cache
+C:\Users\juand\OneDrive\Documentos\BCI_projects\EEG_bineural_project\c++\libmuse_windows_8.0.0\libmuse_windows_8.0.0\examples\ReaderWriter\x64\Debug\priconfig.xml
+C:\Users\juand\OneDrive\Documentos\BCI_projects\EEG_bineural_project\c++\libmuse_windows_8.0.0\libmuse_windows_8.0.0\examples\ReaderWriter\x64\Debug\priconfig.xml.intermediate
+C:\Users\juand\OneDrive\Documentos\BCI_projects\EEG_bineural_project\c++\libmuse_windows_8.0.0\libmuse_windows_8.0.0\examples\ReaderWriter\x64\Debug\unfiltered.layout.resfiles
+C:\Users\juand\OneDrive\Documentos\BCI_projects\EEG_bineural_project\c++\libmuse_windows_8.0.0\libmuse_windows_8.0.0\examples\ReaderWriter\x64\Debug\unfiltered.layout.resfiles.intermediate
+C:\Users\juand\OneDrive\Documentos\BCI_projects\EEG_bineural_project\c++\libmuse_windows_8.0.0\libmuse_windows_8.0.0\examples\ReaderWriter\x64\Debug\filtered.layout.resfiles
+C:\Users\juand\OneDrive\Documentos\BCI_projects\EEG_bineural_project\c++\libmuse_windows_8.0.0\libmuse_windows_8.0.0\examples\ReaderWriter\x64\Debug\filtered.layout.resfiles.intermediate
+C:\Users\juand\OneDrive\Documentos\BCI_projects\EEG_bineural_project\c++\libmuse_windows_8.0.0\libmuse_windows_8.0.0\examples\ReaderWriter\x64\Debug\excluded.layout.resfiles
+C:\Users\juand\OneDrive\Documentos\BCI_projects\EEG_bineural_project\c++\libmuse_windows_8.0.0\libmuse_windows_8.0.0\examples\ReaderWriter\x64\Debug\excluded.layout.resfiles.intermediate
+C:\Users\juand\OneDrive\Documentos\BCI_projects\EEG_bineural_project\c++\libmuse_windows_8.0.0\libmuse_windows_8.0.0\examples\ReaderWriter\x64\Debug\resources.resfiles
+C:\Users\juand\OneDrive\Documentos\BCI_projects\EEG_bineural_project\c++\libmuse_windows_8.0.0\libmuse_windows_8.0.0\examples\ReaderWriter\x64\Debug\resources.resfiles.intermediate
+C:\Users\juand\OneDrive\Documentos\BCI_projects\EEG_bineural_project\c++\libmuse_windows_8.0.0\libmuse_windows_8.0.0\examples\ReaderWriter\x64\Debug\pri.resfiles
+C:\Users\juand\OneDrive\Documentos\BCI_projects\EEG_bineural_project\c++\libmuse_windows_8.0.0\libmuse_windows_8.0.0\examples\ReaderWriter\x64\Debug\pri.resfiles.intermediate
+C:\Users\juand\OneDrive\Documentos\BCI_projects\EEG_bineural_project\c++\libmuse_windows_8.0.0\libmuse_windows_8.0.0\examples\ReaderWriter\x64\Debug\qualifiers.txt
+C:\Users\juand\OneDrive\Documentos\BCI_projects\EEG_bineural_project\c++\libmuse_windows_8.0.0\libmuse_windows_8.0.0\examples\ReaderWriter\x64\Debug\qualifiers.txt.intermediate
+C:\Users\juand\OneDrive\Documentos\BCI_projects\EEG_bineural_project\c++\libmuse_windows_8.0.0\libmuse_windows_8.0.0\examples\ReaderWriter\x64\Debug\MultipleQualifiersPerDimensionFound.txt
+C:\Users\juand\OneDrive\Documentos\BCI_projects\EEG_bineural_project\c++\libmuse_windows_8.0.0\libmuse_windows_8.0.0\examples\ReaderWriter\x64\Debug\ProjectArchitectures.txt

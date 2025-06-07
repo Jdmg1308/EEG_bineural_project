@@ -1,0 +1,6 @@
+C:\Users\juand\OneDrive\Documentos\BCI_projects\SDK - RDK\Muse SDK _ RDK\Muse SDK\Muse SDK 8.0.0\libmuse_windows_8.0.0\libmuse_windows_8.0.0\examples\GettingData32\x64\Debug\GettingData32.vcxproj.MdMergeInputs.cache
+C:\Users\juand\OneDrive\Documentos\BCI_projects\SDK - RDK\Muse SDK _ RDK\Muse SDK\Muse SDK 8.0.0\libmuse_windows_8.0.0\libmuse_windows_8.0.0\examples\GettingData32\x64\Debug\GettingData32.vcxproj.cppwinrt_plat.cache
+C:\Users\juand\OneDrive\Documentos\BCI_projects\SDK - RDK\Muse SDK _ RDK\Muse SDK\Muse SDK 8.0.0\libmuse_windows_8.0.0\libmuse_windows_8.0.0\examples\GettingData32\x64\Debug\GettingData32.vcxproj.cppwinrt_comp.cache
+C:\Users\juand\OneDrive\Documentos\BCI_projects\EEG_bineural_project\c++\libmuse_windows_8.0.0\libmuse_windows_8.0.0\examples\GettingData32\x64\Debug\GettingData32.vcxproj.MdMergeInputs.cache
+C:\Users\juand\OneDrive\Documentos\BCI_projects\EEG_bineural_project\c++\libmuse_windows_8.0.0\libmuse_windows_8.0.0\examples\GettingData32\x64\Debug\GettingData32.vcxproj.cppwinrt_plat.cache
+C:\Users\juand\OneDrive\Documentos\BCI_projects\EEG_bineural_project\c++\libmuse_windows_8.0.0\libmuse_windows_8.0.0\examples\GettingData32\x64\Debug\GettingData32.vcxproj.cppwinrt_comp.cache
