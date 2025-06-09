@@ -10,6 +10,7 @@
 
 #include "MainPage.g.h"
 #include "DataModel.h"
+#include "EEGDataCollector.h"
 
 #include "muse.h"
 
@@ -127,6 +128,10 @@ namespace GettingData
         void data_type_selection_changed(Platform::Object^ sender, Windows::UI::Xaml::Controls::SelectionChangedEventArgs^ e);
 
 
+        void print_eegstate_clicked(Platform::Object^ sender, Windows::UI::Xaml::RoutedEventArgs^ e);
+
+
+        void GraphSetup(double buffer[6]);
 
 
         //////////////////////////////////////////////////////
@@ -163,6 +168,7 @@ namespace GettingData
         /// that we are receiving; Accelerometer, Battery, DrlRef, EEG, Gyro or
         /// Artifact respectively.  EEG is used for all EEG derived values like
         /// ALPHA_ABSOLUTE, BETA_RELATIVE, HSI_PRECISION, etc.
+        void set_my_ui();
         void set_accel_ui();
         void set_battery_ui();
         void set_drl_ref_ui();
@@ -210,6 +216,7 @@ namespace GettingData
         std::shared_ptr<MuseListenerWin> muse_listener_;
         std::shared_ptr<ConnectionListener> connection_listener_;
         std::shared_ptr<DataListener> data_listener_;
+        std::shared_ptr<EEGDataCollector> eeg_data_collector_;
 
         /// A reference to the Muse object that we are currently connected to.
         /// This is useful so we know which Muse to disconnect.
@@ -234,9 +241,13 @@ namespace GettingData
         /// Toogle for pause/resume data transmission.
         bool enable_data_;
 
+        // bool for my data diplay
+        bool use_my_eeg_data_ = false;
+
 		/// stores last 500 points of data for each channel
         std::deque<double> data_buffers_[6];
-        const size_t max_points_ = 500;
+        const size_t max_points_ = 250;
+
     };
 
 

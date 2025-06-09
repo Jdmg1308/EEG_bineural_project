@@ -58,134 +58,141 @@ void ::GettingData::MainPage::Connect(int __connectionId, ::Platform::Object^ __
         break;
     case 6:
         {
-            this->jd_title = safe_cast<::Windows::UI::Xaml::Controls::TextBlock^>(__target);
+            ::Windows::UI::Xaml::Controls::Button^ element6 = safe_cast<::Windows::UI::Xaml::Controls::Button^>(__target);
+            (safe_cast<::Windows::UI::Xaml::Controls::Button^>(element6))->Click += ref new ::Windows::UI::Xaml::RoutedEventHandler(this, (void (::GettingData::MainPage::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::RoutedEventArgs^))&MainPage::print_eegstate_clicked);
         }
         break;
     case 7:
         {
-            this->connection_status_label = safe_cast<::Windows::UI::Xaml::Controls::TextBlock^>(__target);
+            this->jd_title = safe_cast<::Windows::UI::Xaml::Controls::TextBlock^>(__target);
         }
         break;
     case 8:
         {
-            this->connection_status = safe_cast<::Windows::UI::Xaml::Controls::TextBlock^>(__target);
+            this->connection_status_label = safe_cast<::Windows::UI::Xaml::Controls::TextBlock^>(__target);
         }
         break;
     case 9:
+        {
+            this->connection_status = safe_cast<::Windows::UI::Xaml::Controls::TextBlock^>(__target);
+        }
+        break;
+    case 10:
         {
             this->data_type_combobox = safe_cast<::Windows::UI::Xaml::Controls::ComboBox^>(__target);
             (safe_cast<::Windows::UI::Xaml::Controls::ComboBox^>(this->data_type_combobox))->SelectionChanged += ref new ::Windows::UI::Xaml::Controls::SelectionChangedEventHandler(this, (void (::GettingData::MainPage::*)
                 (::Platform::Object^, ::Windows::UI::Xaml::Controls::SelectionChangedEventArgs^))&MainPage::data_type_selection_changed);
         }
         break;
-    case 10:
+    case 11:
         {
             this->version_label = safe_cast<::Windows::UI::Xaml::Controls::TextBlock^>(__target);
         }
         break;
-    case 11:
+    case 12:
         {
             this->version = safe_cast<::Windows::UI::Xaml::Controls::TextBlock^>(__target);
         }
         break;
-    case 12:
+    case 13:
         {
             this->pause_button = safe_cast<::Windows::UI::Xaml::Controls::Button^>(__target);
             (safe_cast<::Windows::UI::Xaml::Controls::Button^>(this->pause_button))->Click += ref new ::Windows::UI::Xaml::RoutedEventHandler(this, (void (::GettingData::MainPage::*)
                 (::Platform::Object^, ::Windows::UI::Xaml::RoutedEventArgs^))&MainPage::pause_resume_clicked);
         }
         break;
-    case 13:
+    case 14:
         {
             this->line_1_label = safe_cast<::Windows::UI::Xaml::Controls::TextBlock^>(__target);
         }
         break;
-    case 14:
+    case 15:
         {
             this->line_1_data = safe_cast<::Windows::UI::Xaml::Controls::TextBlock^>(__target);
         }
         break;
-    case 15:
+    case 16:
         {
             this->line_2_label = safe_cast<::Windows::UI::Xaml::Controls::TextBlock^>(__target);
         }
         break;
-    case 16:
+    case 17:
         {
             this->line_2_data = safe_cast<::Windows::UI::Xaml::Controls::TextBlock^>(__target);
         }
         break;
-    case 17:
+    case 18:
         {
             this->line_3_label = safe_cast<::Windows::UI::Xaml::Controls::TextBlock^>(__target);
         }
         break;
-    case 18:
+    case 19:
         {
             this->line_3_data = safe_cast<::Windows::UI::Xaml::Controls::TextBlock^>(__target);
         }
         break;
-    case 19:
+    case 20:
         {
             this->line_4_label = safe_cast<::Windows::UI::Xaml::Controls::TextBlock^>(__target);
         }
         break;
-    case 20:
+    case 21:
         {
             this->line_4_data = safe_cast<::Windows::UI::Xaml::Controls::TextBlock^>(__target);
         }
         break;
-    case 21:
+    case 22:
         {
             this->line_5_label = safe_cast<::Windows::UI::Xaml::Controls::TextBlock^>(__target);
         }
         break;
-    case 22:
+    case 23:
         {
             this->line_5_data = safe_cast<::Windows::UI::Xaml::Controls::TextBlock^>(__target);
         }
         break;
-    case 23:
+    case 24:
         {
             this->line_6_label = safe_cast<::Windows::UI::Xaml::Controls::TextBlock^>(__target);
         }
         break;
-    case 24:
+    case 25:
         {
             this->line_6_data = safe_cast<::Windows::UI::Xaml::Controls::TextBlock^>(__target);
         }
         break;
-    case 25:
+    case 26:
         {
             this->GraphCanvas = safe_cast<::Windows::UI::Xaml::Controls::Canvas^>(__target);
         }
         break;
-    case 26:
+    case 27:
         {
             this->DataPolyline = safe_cast<::Windows::UI::Xaml::Shapes::Polyline^>(__target);
         }
         break;
-    case 27:
+    case 28:
         {
             this->DataPolyline2 = safe_cast<::Windows::UI::Xaml::Shapes::Polyline^>(__target);
         }
         break;
-    case 28:
+    case 29:
         {
             this->DataPolyline3 = safe_cast<::Windows::UI::Xaml::Shapes::Polyline^>(__target);
         }
         break;
-    case 29:
+    case 30:
         {
             this->DataPolyline4 = safe_cast<::Windows::UI::Xaml::Shapes::Polyline^>(__target);
         }
         break;
-    case 30:
+    case 31:
         {
             this->DataPolyline5 = safe_cast<::Windows::UI::Xaml::Shapes::Polyline^>(__target);
         }
         break;
-    case 31:
+    case 32:
         {
             this->DataPolyline6 = safe_cast<::Windows::UI::Xaml::Shapes::Polyline^>(__target);
         }

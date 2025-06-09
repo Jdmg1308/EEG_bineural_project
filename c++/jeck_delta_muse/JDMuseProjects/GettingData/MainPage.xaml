@@ -10,8 +10,9 @@
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <ComboBox x:Name="muse_list_combobox" HorizontalAlignment="Stretch" Margin="20,50,20,0"/>
         <Button x:Name="refresh_button" Content="Refresh" Margin="20,100,0,0" VerticalAlignment="Top" Click="refresh_button_clicked"/>
-        <Button x:Name="connect_button" Content="Connect" HorizontalAlignment="Center" Margin="0,100,0,0" VerticalAlignment="Top" Click="connect_button_clicked"/>
+        <Button x:Name="connect_button" Content="Connect" Margin="344,100,0,0" VerticalAlignment="Top" Click="connect_button_clicked"/>
         <Button x:Name="disconnect_button" Content="Disconnect" HorizontalAlignment="Right" Margin="0,100,20,0" VerticalAlignment="Top" Click="disconnect_button_clicked"/>
+        <Button Content="Print EEGState" Click="print_eegstate_clicked" Margin="1054,100,0,0" VerticalAlignment="Top"/>
         <TextBlock x:Name="jd_title" Margin="10,10,10,0" TextWrapping="Wrap" Text="Juan Diego Mendez Visualizer" VerticalAlignment="Top" Height="35" FontSize="24"/>
         <TextBlock x:Name="connection_status_label" HorizontalAlignment="Left" Margin="20,175,0,0" TextWrapping="Wrap" Text="Connection Status:" VerticalAlignment="Top"/>
         <TextBlock x:Name="connection_status" HorizontalAlignment="Left" Margin="150,175,0,0" TextWrapping="Wrap" Text="Unknown" VerticalAlignment="Top"/>
@@ -29,17 +30,17 @@
                 <ColumnDefinition/>
                 <ColumnDefinition/>
             </Grid.ColumnDefinitions>
-            <TextBlock x:Name="line_1_label" HorizontalAlignment="Center" TextWrapping="Wrap" Text="Data 1" VerticalAlignment="Top" Grid.Row="0" Grid.Column="0"/>
+            <TextBlock x:Name="line_1_label" HorizontalAlignment="Center" TextWrapping="Wrap" Text="Data 1" VerticalAlignment="Top" Foreground="Blue" Grid.Row="0" Grid.Column="0"/>
             <TextBlock x:Name="line_1_data" HorizontalAlignment="Center"  TextWrapping="Wrap" Text="Unknown" VerticalAlignment="Top" Grid.Row="0" Grid.Column="1"/>
-            <TextBlock x:Name="line_2_label" HorizontalAlignment="Center" TextWrapping="Wrap" Text="Data 2" VerticalAlignment="Top" Grid.Row="1" Grid.Column="0"/>
+            <TextBlock x:Name="line_2_label" HorizontalAlignment="Center" TextWrapping="Wrap" Text="Data 2" VerticalAlignment="Top" Foreground="Red" Grid.Row="1" Grid.Column="0"/>
             <TextBlock x:Name="line_2_data" HorizontalAlignment="Center"  TextWrapping="Wrap" Text="Unknown" VerticalAlignment="Top" Grid.Row="1" Grid.Column="1"/>
-            <TextBlock x:Name="line_3_label" HorizontalAlignment="Center" TextWrapping="Wrap" Text="Data 3" VerticalAlignment="Top" Grid.Row="2" Grid.Column="0"/>
+            <TextBlock x:Name="line_3_label" HorizontalAlignment="Center" TextWrapping="Wrap" Text="Data 3" VerticalAlignment="Top" Foreground="Green" Grid.Row="2" Grid.Column="0"/>
             <TextBlock x:Name="line_3_data" HorizontalAlignment="Center"  TextWrapping="Wrap" Text="Unknown" VerticalAlignment="Top" Grid.Row="2" Grid.Column="1"/>
-            <TextBlock x:Name="line_4_label" HorizontalAlignment="Center" TextWrapping="Wrap" Text="Data 4" VerticalAlignment="Top" Grid.Row="3" Grid.Column="0"/>
+            <TextBlock x:Name="line_4_label" HorizontalAlignment="Center" TextWrapping="Wrap" Text="Data 4" VerticalAlignment="Top" Foreground="Orange" Grid.Row="3" Grid.Column="0"/>
             <TextBlock x:Name="line_4_data" HorizontalAlignment="Center"  TextWrapping="Wrap" Text="Unknown" VerticalAlignment="Top" Grid.Row="3" Grid.Column="1"/>
-            <TextBlock x:Name="line_5_label" HorizontalAlignment="Center" TextWrapping="Wrap" Text="Data 5" VerticalAlignment="Top" Grid.Row="4" Grid.Column="0"/>
+            <TextBlock x:Name="line_5_label" HorizontalAlignment="Center" TextWrapping="Wrap" Text="Data 5" VerticalAlignment="Top" Foreground="Purple" Grid.Row="4" Grid.Column="0"/>
             <TextBlock x:Name="line_5_data" HorizontalAlignment="Center"  TextWrapping="Wrap" Text="Unknown" VerticalAlignment="Top" Grid.Row="4" Grid.Column="1"/>
-            <TextBlock x:Name="line_6_label" HorizontalAlignment="Center" TextWrapping="Wrap" Text="Data 6" VerticalAlignment="Top" Grid.Row="5" Grid.Column="0"/>
+            <TextBlock x:Name="line_6_label" HorizontalAlignment="Center" TextWrapping="Wrap" Text="Data 6" VerticalAlignment="Top" Foreground="Brown" Grid.Row="5" Grid.Column="0"/>
             <TextBlock x:Name="line_6_data" HorizontalAlignment="Center"  TextWrapping="Wrap" Text="Unknown" VerticalAlignment="Top" Grid.Row="5" Grid.Column="1"/>
             <Canvas x:Name="GraphCanvas" Background="LightGray" Margin="150,50,150,-450" Grid.Row="5" Grid.ColumnSpan="2">
                 <Polyline x:Name="DataPolyline" Stroke="Blue" StrokeThickness="2"/>

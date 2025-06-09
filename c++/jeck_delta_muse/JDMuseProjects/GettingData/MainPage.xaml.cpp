@@ -171,10 +171,29 @@ void MainPage::connect_button_clicked(Platform::Object^ sender,
         model_.clear();
         my_muse_->register_connection_listener(connection_listener_);
         my_muse_->register_data_listener(data_listener_, current_data_type_);
-        my_muse_->set_preset(MusePreset::PRESET_21); // Choose a preset that matches with the signals to be received (see documentation)
+        my_muse_->set_preset(MusePreset::PRESET_1042); // Choose a preset that matches with the signals to be received (see documentation)
         my_muse_->run_asynchronously();
+
+        // Create the EEGDataCollector instance
+        eeg_data_collector_ = std::make_shared<EEGDataCollector>();
+
+        // Register EEGDataCollector for multiple packet types
+        my_muse_->register_data_listener(eeg_data_collector_, MuseDataPacketType::EEG);
+        my_muse_->register_data_listener(eeg_data_collector_, MuseDataPacketType::ALPHA_ABSOLUTE);
+        my_muse_->register_data_listener(eeg_data_collector_, MuseDataPacketType::BETA_ABSOLUTE);
+        my_muse_->register_data_listener(eeg_data_collector_, MuseDataPacketType::THETA_ABSOLUTE);
+        my_muse_->register_data_listener(eeg_data_collector_, MuseDataPacketType::DELTA_ABSOLUTE);
+        my_muse_->register_data_listener(eeg_data_collector_, MuseDataPacketType::GAMMA_ABSOLUTE);
+        my_muse_->register_data_listener(eeg_data_collector_, MuseDataPacketType::OPTICS);
+		my_muse_->register_data_listener(eeg_data_collector_, MuseDataPacketType::ARTIFACTS);
+
+        // Set preset and run
+        my_muse_->set_preset(MusePreset::PRESET_1042);
+        my_muse_->run_asynchronously();
+
     }
 }
+
 
 void MainPage::disconnect_button_clicked(Platform::Object^ sender,
     Windows::UI::Xaml::RoutedEventArgs^ e)
@@ -255,53 +274,94 @@ void MainPage::queue_ui_update() {
 // Call only from the UI thread.
 void MainPage::update_ui() {
     if (model_.is_dirty()) {
+        // set the data into the buffer
         double buffer[6] = { 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 };
-        model_.get_buffer(buffer);
+        if (use_my_eeg_data_ && eeg_data_collector_) {
+            // my data packet
+            EEGState state = eeg_data_collector_->get_current_state();
+			buffer[0] = state.alpha[1];
+            buffer[1] = state.beta[1];
+			buffer[2] = state.theta[1];
+			buffer[3] = state.delta[1];
+			buffer[4] = state.gamma[1];
+			buffer[5] = state.headband_on;
+        }
+        else {
+			// regular data packet
+            model_.get_buffer(buffer);
+        }
 
+        //setup data on display
         line_1_data->Text = formatData(buffer[0]);
         line_2_data->Text = formatData(buffer[1]);
         line_3_data->Text = formatData(buffer[2]);
         line_4_data->Text = formatData(buffer[3]);
         line_5_data->Text = formatData(buffer[4]);
         line_6_data->Text = formatData(buffer[5]);
+
+        //setup graph
+        GraphSetup(buffer);
+
         connection_status->Text = Convert::to_platform_string(model_.get_connection_state());
         version->Text = Convert::to_platform_string(model_.get_version());
-
-        // Add new points to buffers
-        for (size_t i = 0; i < 6; ++i) {
-            data_buffers_[i].push_back(buffer[i]);
-            if (data_buffers_[i].size() > max_points_) {
-                data_buffers_[i].pop_front();
-            }
-        }
-        // Update polylines
-        Windows::UI::Xaml::Shapes::Polyline^ polylines[6] = {
-            DataPolyline, DataPolyline2, DataPolyline3, DataPolyline4, DataPolyline5, DataPolyline6
-        };
-
-        double canvas_width = 1000;
-        double canvas_height = 400;
-        for (size_t i = 0; i < 6; ++i) {
-            auto points = ref new Windows::UI::Xaml::Media::PointCollection();
-            size_t num_points = data_buffers_[i].size();
-
-            for (size_t j = 0; j < num_points; ++j) {
-                double x = (static_cast<double>(j) / (max_points_ - 1)) * canvas_width;
-
-                double value = data_buffers_[i][j];
-                double normalized_value = (current_data_type_ == MuseDataPacketType::EEG) ? value / 1000.0 : (value + 1.0) / 2.0;
-                normalized_value = (normalized_value < 0.0) ? 0.0 : (normalized_value > 1.0) ? 1.0 : normalized_value;
-                // Convert to Y
-                double y = (1.0 - normalized_value) * canvas_height;
-
-                points->Append(Windows::Foundation::Point(x, y));
-            }
-            polylines[i]->Points = points;
-        }
 
         model_.clear_dirty_flag();
     }
     queue_ui_update();
+}
+
+void MainPage::GraphSetup(double buffer[6]) {
+    // Add new points to graph buffers
+    for (size_t i = 0; i < 6; ++i) {
+        data_buffers_[i].push_back(buffer[i]);
+        if (data_buffers_[i].size() > max_points_) {
+            data_buffers_[i].pop_front();
+        }
+    }
+
+    // Update polylines
+    Windows::UI::Xaml::Shapes::Polyline^ polylines[6] = {
+        DataPolyline, DataPolyline2, DataPolyline3, DataPolyline4, DataPolyline5, DataPolyline6
+    };
+
+	// actuallly draw the polylines
+    double canvas_width = 1000;
+    double canvas_height = 400;
+    for (size_t i = 0; i < 6; ++i) {
+        auto points = ref new Windows::UI::Xaml::Media::PointCollection();
+        size_t num_points = data_buffers_[i].size();
+
+        for (size_t j = 0; j < num_points; ++j) {
+            double x = (static_cast<double>(j) / (max_points_ - 1)) * canvas_width;
+
+            double value = data_buffers_[i][j];
+            double normalized_value = (current_data_type_ == MuseDataPacketType::EEG) ? value / 1000.0 : (value + 1.0) / 2.0;
+            normalized_value = (normalized_value < 0.0) ? 0.0 : (normalized_value > 1.0) ? 1.0 : normalized_value;
+            // Convert to Y
+            double y = (1.0 - normalized_value) * canvas_height;
+
+            points->Append(Windows::Foundation::Point(x, y));
+        }
+        polylines[i]->Points = points;
+    }
+
+}
+
+void MainPage::print_eegstate_clicked(Platform::Object^ sender, Windows::UI::Xaml::RoutedEventArgs^ e)
+{
+	use_my_eeg_data_ = !use_my_eeg_data_;
+    set_my_ui();
+    if (eeg_data_collector_) {
+        EEGState state = eeg_data_collector_->get_current_state();
+
+        // Print a few example fields
+        std::wstringstream ss;
+        ss << L"EEG1: " << state.eeg_channels[0] << L", ALPHA1: " << state.alpha[0]
+            << L", OPTICS1: " << state.optics[0] << L", Headband: " << state.headband_on
+            << L", Timestamp: " << state.timestamp << std::endl;
+
+        OutputDebugString(ss.str().c_str());
+    }
 }
 
 void MainPage::update_muse_list() {
@@ -334,6 +394,15 @@ void MainPage::change_data_type(MuseDataPacketType type) {
     }
     current_data_type_ = type;
     model_.reset();
+}
+
+void MainPage::set_my_ui() {
+    set_ui_line(line_1_label, "alpha", line_1_data, true);
+    set_ui_line(line_2_label, "beta", line_2_data, true);
+    set_ui_line(line_3_label, "theta", line_3_data, true);
+    set_ui_line(line_4_label, "delta", line_4_data, true);
+    set_ui_line(line_5_label, "gamma", line_5_data, true);
+    set_ui_line(line_6_label, "headband_on", line_6_data, true);
 }
 
 void MainPage::set_accel_ui() {

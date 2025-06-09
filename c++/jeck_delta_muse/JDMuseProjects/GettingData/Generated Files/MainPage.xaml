@@ -10,12 +10,13 @@
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <ComboBox x:ConnectionId='2' x:Name="muse_list_combobox" HorizontalAlignment="Stretch" Margin="20,50,20,0"/>
         <Button x:ConnectionId='3' x:Name="refresh_button" Content="Refresh" Margin="20,100,0,0" VerticalAlignment="Top"                               />
-        <Button x:ConnectionId='4' x:Name="connect_button" Content="Connect" HorizontalAlignment="Center" Margin="0,100,0,0" VerticalAlignment="Top"                               />
+        <Button x:ConnectionId='4' x:Name="connect_button" Content="Connect" Margin="344,100,0,0" VerticalAlignment="Top"                               />
         <Button x:ConnectionId='5' x:Name="disconnect_button" Content="Disconnect" HorizontalAlignment="Right" Margin="0,100,20,0" VerticalAlignment="Top"                                  />
-        <TextBlock x:ConnectionId='6' x:Name="jd_title" Margin="10,10,10,0" TextWrapping="Wrap" Text="Juan Diego Mendez Visualizer" VerticalAlignment="Top" Height="35" FontSize="24"/>
-        <TextBlock x:ConnectionId='7' x:Name="connection_status_label" HorizontalAlignment="Left" Margin="20,175,0,0" TextWrapping="Wrap" Text="Connection Status:" VerticalAlignment="Top"/>
-        <TextBlock x:ConnectionId='8' x:Name="connection_status" HorizontalAlignment="Left" Margin="150,175,0,0" TextWrapping="Wrap" Text="Unknown" VerticalAlignment="Top"/>
-        <ComboBox x:ConnectionId='9' x:Name="data_type_combobox" HorizontalAlignment="Stretch" Margin="20,230,20,0"                                                />
+        <Button x:ConnectionId='6' Content="Print EEGState"                                Margin="1054,100,0,0" VerticalAlignment="Top"/>
+        <TextBlock x:ConnectionId='7' x:Name="jd_title" Margin="10,10,10,0" TextWrapping="Wrap" Text="Juan Diego Mendez Visualizer" VerticalAlignment="Top" Height="35" FontSize="24"/>
+        <TextBlock x:ConnectionId='8' x:Name="connection_status_label" HorizontalAlignment="Left" Margin="20,175,0,0" TextWrapping="Wrap" Text="Connection Status:" VerticalAlignment="Top"/>
+        <TextBlock x:ConnectionId='9' x:Name="connection_status" HorizontalAlignment="Left" Margin="150,175,0,0" TextWrapping="Wrap" Text="Unknown" VerticalAlignment="Top"/>
+        <ComboBox x:ConnectionId='10' x:Name="data_type_combobox" HorizontalAlignment="Stretch" Margin="20,230,20,0"                                                />
         <Grid Height="100" Margin="8,280,12,0" VerticalAlignment="Top">
             <Grid.RowDefinitions>
                 <RowDefinition/>
@@ -29,25 +30,25 @@
                 <ColumnDefinition/>
                 <ColumnDefinition/>
             </Grid.ColumnDefinitions>
-            <TextBlock x:ConnectionId='13' x:Name="line_1_label" HorizontalAlignment="Center" TextWrapping="Wrap" Text="Data 1" VerticalAlignment="Top" Grid.Row="0" Grid.Column="0"/>
-            <TextBlock x:ConnectionId='14' x:Name="line_1_data" HorizontalAlignment="Center"  TextWrapping="Wrap" Text="Unknown" VerticalAlignment="Top" Grid.Row="0" Grid.Column="1"/>
-            <TextBlock x:ConnectionId='15' x:Name="line_2_label" HorizontalAlignment="Center" TextWrapping="Wrap" Text="Data 2" VerticalAlignment="Top" Grid.Row="1" Grid.Column="0"/>
-            <TextBlock x:ConnectionId='16' x:Name="line_2_data" HorizontalAlignment="Center"  TextWrapping="Wrap" Text="Unknown" VerticalAlignment="Top" Grid.Row="1" Grid.Column="1"/>
-            <TextBlock x:ConnectionId='17' x:Name="line_3_label" HorizontalAlignment="Center" TextWrapping="Wrap" Text="Data 3" VerticalAlignment="Top" Grid.Row="2" Grid.Column="0"/>
-            <TextBlock x:ConnectionId='18' x:Name="line_3_data" HorizontalAlignment="Center"  TextWrapping="Wrap" Text="Unknown" VerticalAlignment="Top" Grid.Row="2" Grid.Column="1"/>
-            <TextBlock x:ConnectionId='19' x:Name="line_4_label" HorizontalAlignment="Center" TextWrapping="Wrap" Text="Data 4" VerticalAlignment="Top" Grid.Row="3" Grid.Column="0"/>
-            <TextBlock x:ConnectionId='20' x:Name="line_4_data" HorizontalAlignment="Center"  TextWrapping="Wrap" Text="Unknown" VerticalAlignment="Top" Grid.Row="3" Grid.Column="1"/>
-            <TextBlock x:ConnectionId='21' x:Name="line_5_label" HorizontalAlignment="Center" TextWrapping="Wrap" Text="Data 5" VerticalAlignment="Top" Grid.Row="4" Grid.Column="0"/>
-            <TextBlock x:ConnectionId='22' x:Name="line_5_data" HorizontalAlignment="Center"  TextWrapping="Wrap" Text="Unknown" VerticalAlignment="Top" Grid.Row="4" Grid.Column="1"/>
-            <TextBlock x:ConnectionId='23' x:Name="line_6_label" HorizontalAlignment="Center" TextWrapping="Wrap" Text="Data 6" VerticalAlignment="Top" Grid.Row="5" Grid.Column="0"/>
-            <TextBlock x:ConnectionId='24' x:Name="line_6_data" HorizontalAlignment="Center"  TextWrapping="Wrap" Text="Unknown" VerticalAlignment="Top" Grid.Row="5" Grid.Column="1"/>
-            <Canvas x:ConnectionId='25' x:Name="GraphCanvas" Background="LightGray" Margin="150,50,150,-450" Grid.Row="5" Grid.ColumnSpan="2">
-                <Polyline x:ConnectionId='26' x:Name="DataPolyline" Stroke="Blue" StrokeThickness="2"/>
-                <Polyline x:ConnectionId='27' x:Name="DataPolyline2" Stroke="Red" StrokeThickness="2"/>
-                <Polyline x:ConnectionId='28' x:Name="DataPolyline3" Stroke="Green" StrokeThickness="2"/>
-                <Polyline x:ConnectionId='29' x:Name="DataPolyline4" Stroke="Orange" StrokeThickness="2"/>
-                <Polyline x:ConnectionId='30' x:Name="DataPolyline5" Stroke="Purple" StrokeThickness="2"/>
-                <Polyline x:ConnectionId='31' x:Name="DataPolyline6" Stroke="Brown" StrokeThickness="2"/>
+            <TextBlock x:ConnectionId='14' x:Name="line_1_label" HorizontalAlignment="Center" TextWrapping="Wrap" Text="Data 1" VerticalAlignment="Top" Foreground="Blue" Grid.Row="0" Grid.Column="0"/>
+            <TextBlock x:ConnectionId='15' x:Name="line_1_data" HorizontalAlignment="Center"  TextWrapping="Wrap" Text="Unknown" VerticalAlignment="Top" Grid.Row="0" Grid.Column="1"/>
+            <TextBlock x:ConnectionId='16' x:Name="line_2_label" HorizontalAlignment="Center" TextWrapping="Wrap" Text="Data 2" VerticalAlignment="Top" Foreground="Red" Grid.Row="1" Grid.Column="0"/>
+            <TextBlock x:ConnectionId='17' x:Name="line_2_data" HorizontalAlignment="Center"  TextWrapping="Wrap" Text="Unknown" VerticalAlignment="Top" Grid.Row="1" Grid.Column="1"/>
+            <TextBlock x:ConnectionId='18' x:Name="line_3_label" HorizontalAlignment="Center" TextWrapping="Wrap" Text="Data 3" VerticalAlignment="Top" Foreground="Green" Grid.Row="2" Grid.Column="0"/>
+            <TextBlock x:ConnectionId='19' x:Name="line_3_data" HorizontalAlignment="Center"  TextWrapping="Wrap" Text="Unknown" VerticalAlignment="Top" Grid.Row="2" Grid.Column="1"/>
+            <TextBlock x:ConnectionId='20' x:Name="line_4_label" HorizontalAlignment="Center" TextWrapping="Wrap" Text="Data 4" VerticalAlignment="Top" Foreground="Orange" Grid.Row="3" Grid.Column="0"/>
+            <TextBlock x:ConnectionId='21' x:Name="line_4_data" HorizontalAlignment="Center"  TextWrapping="Wrap" Text="Unknown" VerticalAlignment="Top" Grid.Row="3" Grid.Column="1"/>
+            <TextBlock x:ConnectionId='22' x:Name="line_5_label" HorizontalAlignment="Center" TextWrapping="Wrap" Text="Data 5" VerticalAlignment="Top" Foreground="Purple" Grid.Row="4" Grid.Column="0"/>
+            <TextBlock x:ConnectionId='23' x:Name="line_5_data" HorizontalAlignment="Center"  TextWrapping="Wrap" Text="Unknown" VerticalAlignment="Top" Grid.Row="4" Grid.Column="1"/>
+            <TextBlock x:ConnectionId='24' x:Name="line_6_label" HorizontalAlignment="Center" TextWrapping="Wrap" Text="Data 6" VerticalAlignment="Top" Foreground="Brown" Grid.Row="5" Grid.Column="0"/>
+            <TextBlock x:ConnectionId='25' x:Name="line_6_data" HorizontalAlignment="Center"  TextWrapping="Wrap" Text="Unknown" VerticalAlignment="Top" Grid.Row="5" Grid.Column="1"/>
+            <Canvas x:ConnectionId='26' x:Name="GraphCanvas" Background="LightGray" Margin="150,50,150,-450" Grid.Row="5" Grid.ColumnSpan="2">
+                <Polyline x:ConnectionId='27' x:Name="DataPolyline" Stroke="Blue" StrokeThickness="2"/>
+                <Polyline x:ConnectionId='28' x:Name="DataPolyline2" Stroke="Red" StrokeThickness="2"/>
+                <Polyline x:ConnectionId='29' x:Name="DataPolyline3" Stroke="Green" StrokeThickness="2"/>
+                <Polyline x:ConnectionId='30' x:Name="DataPolyline4" Stroke="Orange" StrokeThickness="2"/>
+                <Polyline x:ConnectionId='31' x:Name="DataPolyline5" Stroke="Purple" StrokeThickness="2"/>
+                <Polyline x:ConnectionId='32' x:Name="DataPolyline6" Stroke="Brown" StrokeThickness="2"/>
 
                 <TextBlock Text="+1" Canvas.Left="5" Canvas.Top="0"/>
                 <TextBlock Text="+0.5" Canvas.Left="5" Canvas.Top="100"/>
@@ -59,9 +60,9 @@
                 <TextBlock Text="New" Canvas.Left="570" Canvas.Top="420"/>
             </Canvas>
         </Grid>
-        <TextBlock x:ConnectionId='10' x:Name="version_label" HorizontalAlignment="Left" Margin="20,0,0,60" TextWrapping="Wrap" Text="Version:" VerticalAlignment="Bottom"/>
-        <TextBlock x:ConnectionId='11' x:Name="version" HorizontalAlignment="Left" Margin="80,0,0,60" TextWrapping="Wrap" Text="Unknown" VerticalAlignment="Bottom"/>
-        <Button x:ConnectionId='12' x:Name="pause_button" Content="Pause/Resume" HorizontalAlignment="Left" Margin="20,0,0,20" VerticalAlignment="Bottom"                             />
+        <TextBlock x:ConnectionId='11' x:Name="version_label" HorizontalAlignment="Left" Margin="20,0,0,60" TextWrapping="Wrap" Text="Version:" VerticalAlignment="Bottom"/>
+        <TextBlock x:ConnectionId='12' x:Name="version" HorizontalAlignment="Left" Margin="80,0,0,60" TextWrapping="Wrap" Text="Unknown" VerticalAlignment="Bottom"/>
+        <Button x:ConnectionId='13' x:Name="pause_button" Content="Pause/Resume" HorizontalAlignment="Left" Margin="20,0,0,20" VerticalAlignment="Bottom"                             />
 
     </Grid>
 </Page>
